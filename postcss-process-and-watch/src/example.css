@@ -1,0 +1,26 @@
+/**
+ * Example of a partial stylesheet to demonstrate
+ * CSS @import and CSS variables (and auto prefixing)
+ * Borrowed from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations#Making_text_slide_across_the_browser_window
+ */
+
+:root {
+    --duration: 3s;
+}
+
+.example {
+    animation-duration: var(--duration, 1s);
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
