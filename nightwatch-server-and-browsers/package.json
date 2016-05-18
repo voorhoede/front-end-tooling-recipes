@@ -1,0 +1,17 @@
+{
+  "name": "nightwatch-server-and-browsers",
+  "version": "1.0.0",
+  "description": "Run your project's end-to-end (e2e) tests in Chrome and Firefox using Nightwatch.",
+  "scripts": {
+    "test": "npm run test:e2e",
+    "test:e2e": "node test/e2e.js --env chrome,firefox"
+  },
+  "devDependencies": {
+    "chromedriver": "2.21.2",
+    "gulp": "3.9.1",
+    "gulp-connect": "4.0.0",
+    "gulp-nightwatch": "0.2.9",
+    "selenium-server-standalone-jar": "2.53.0",
+    "yargs": "4.7.1"
+  }
+}
