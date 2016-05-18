@@ -1,0 +1,23 @@
+sudo: false
+language: node_js
+node_js:
+- '6.0'
+cache:
+  directories:
+  - node_modules
+branches:
+  only:
+  - master
+notifications:
+  email: false
+before_script:
+- npm prune
+script:
+- npm run build
+- npm test
+after_script:
+- bash ./scripts/deploy.sh
+env:
+  global:
+  - GH_USER: user
+  - GH_REPO: repository
