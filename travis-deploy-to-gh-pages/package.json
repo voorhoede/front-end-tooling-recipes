@@ -1,0 +1,9 @@
+{
+  "name": "travis-deploy-to-gh-pages",
+  "version": "1.0.0",
+  "description": "Automatically create distributions and deploy them to GitHub Pages using Travis CI.",
+  "scripts": {
+    "build": "mkdir dist/ && echo 'Example distribution' > dist/index.html",
+    "test": "echo 'TODO: WRITE TESTS'"
+  }
+}

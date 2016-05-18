@@ -60,6 +60,15 @@ travis encrypt -r user/repo GH_TOKEN=yournewpersonalaccesstoken --add env.global
 Check `.travis.yml`, you should see an encrypted string behind `env.global.secure`.
 
 
+### Adjust pre-deploy scripts
+
+[`.travis.yml`](.travis.yml) is pre-configured to run `npm run build` and `npm test` before each deploy.
+These scripts are configured with dummy scripts inside of [`package.json`](package.json).
+Only if these scripts are successful, the distribution is actually deployed.
+
+You should adjust these scripts or change the configuration to meet your project's needs.
+
+
 ### Adjust deploy script
 
 The deploy script is pre-configured to deploy everything inside the `dist/` directory to the root of the `gh-pages` branch.
