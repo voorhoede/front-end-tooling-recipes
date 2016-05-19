@@ -21,7 +21,7 @@ following processors:
 * [CSS `@import`s](https://github.com/postcss/postcss-import) to write modular CSS.
 * [CSS variables](https://github.com/MadLittleMods/postcss-css-variables) for parametrised CSS.
 * [Autoprefixer](https://github.com/postcss/autoprefixer) to auto vendor prefix your CSS.
-* [CSS Next](https://github.com/MoOx/postcss-cssnext) to minify your CSS for production.
+* [cssnano](http://cssnano.co/) to minify your CSS for production.
 
 [`src/index.css`](src/index.css) is the main entry point for the CSS compile script. So be sure to start there.
 
