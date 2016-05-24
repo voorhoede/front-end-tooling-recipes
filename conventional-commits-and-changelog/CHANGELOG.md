@@ -1,0 +1,1 @@
+Note: this changelog is automatically populated using `npm run changelog` which is used in `npm version`.
