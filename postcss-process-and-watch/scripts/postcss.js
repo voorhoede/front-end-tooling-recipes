@@ -28,7 +28,8 @@ postcss(processors)
         to: outputFilename.substr(outputDir.length), // file path relative to output dir
         map: { inline: false }
     })
-    .then(writeOutput);
+    .then(writeOutput)
+    .catch(err => handleError(err.message));
 
 
 function writeOutput(result) {
