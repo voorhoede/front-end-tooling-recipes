@@ -7,7 +7,7 @@ if [[ $TRAVIS_BRANCH == "master" && $TRAVIS_PULL_REQUEST == "false" ]]; then
 echo "Starting to update gh-pages\n"
 
 #copy data we're interested in to other place
-cp -R src $HOME/src
+cp -R dist $HOME/dist
 
 #go to home and setup git
 cd $HOME
@@ -19,7 +19,7 @@ git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/${GH_USER}/${
 
 #go into directory and copy data we're interested in to that directory
 cd gh-pages
-cp -Rf $HOME/src/* .
+cp -Rf $HOME/dist/* .
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
 echo "[View live](https://${GH_USER}.github.io/${GH_REPO}/)" > README.md
