@@ -9,6 +9,13 @@ Automatically create distributions and deploy them to [GitHub Pages](https://pag
 
 While the aim is to get automatic deploys, you'll need to do some preparation and configuration once:
 
+### Enable on Travis
+
+* Go to your [Travis profile](https://travis-ci.org/profile/) (create an account first if you don't have one yet).
+* Find your repository (you may need to click "sync account" first).
+* Enable Travis for your repository (use the switch).
+* Go to the settings of your repository on Travis. Enable "Build only if .travis.yml is present", "Build pushes" and "Build pull requests".
+
 
 ### Create `gh-pages` branch
 
@@ -75,11 +82,6 @@ The deploy script is pre-configured to deploy everything inside the `dist/` dire
 If you have a different setup you need to change this inside [`scripts/deploy.sh`](scripts/deploy.sh).
 
 
-### Enable on Travis
-
-* Go to your [Travis profile](https://travis-ci.org/profile/) (create an account first if you don't have one yet).
-* Find your repository (you may need to click "sync account" first).
-* Enable Travis for your repository (use the switch).
-* Go to the settings of your repository on Travis. Enable "Build only if .travis.yml is present", "Build pushes" and "Build pull requests".
+### Enjoy automated builds
 
 Now each push to the `master` branch will result in a deploy to GitHub Pages on every successful build.
