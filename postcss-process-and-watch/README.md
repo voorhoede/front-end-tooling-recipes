@@ -19,7 +19,7 @@ You can write modern CSS with support for [CSS imports](https://developer.mozill
 following processors:
 
 * [CSS `@import`s](https://github.com/postcss/postcss-import) to write modular CSS.
-* [CSS variables](https://github.com/MadLittleMods/postcss-css-variables) for parametrised CSS.
+* [CSS variables](https://github.com/postcss/postcss-custom-properties) for parametrised CSS.
 * [Autoprefixer](https://github.com/postcss/autoprefixer) to auto vendor prefix your CSS.
 * [cssnano](http://cssnano.co/) to minify your CSS for production.
 
