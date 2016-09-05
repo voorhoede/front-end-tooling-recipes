@@ -15,7 +15,7 @@ before_script:
 script:
 - npm run build
 - npm test
-after_script:
+after_success:
 - bash ./scripts/deploy.sh
 env:
   global:
