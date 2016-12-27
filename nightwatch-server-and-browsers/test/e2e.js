@@ -29,7 +29,7 @@ function runTests(config) {
 function startApp() {
     connect.server({
         root: './',
-        port: require('./nightwatch.config.js').app_port
+        port: require('./nightwatch.config').app_port
     });
 }
 
