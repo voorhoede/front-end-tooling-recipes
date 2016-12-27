@@ -13,8 +13,7 @@ Only add/change 1 recipe per Pull Request.
 
 ### Setup
 
-* All recipes must be placed in the `recipes` directory.
-* Within the `recipes` directory, each recipe must be placed in its own directory.
+* Each recipe must be placed in its own directory.
 * Each recipe must have a `README.md` describing its purpose and usage.
 * Each recipe must be linked to from the main [project readme](/README.md#recipes).
 

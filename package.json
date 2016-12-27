@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "rimraf dist/ && mkdirp dist/",
-    "build": "npm run build:index && npm run copy:recipes",
-    "build:index": "node scripts/build-index.js",
-    "copy:recipes": "ncp recipes dist/recipes",
+    "build": "node scripts/build-index.js",
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
