@@ -12,7 +12,7 @@ const outputFilename = 'dist/index.css';
 
 const processors = [
     require('postcss-import'),              // combine imports into one file
-    require('postcss-css-variables'),       // replace variables by their calculated values
+    require('postcss-custom-properties'),   // replace variables by their calculated values
     require('autoprefixer')                 // vendor prefix for older browsers
 ];
 

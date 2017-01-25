@@ -15,7 +15,7 @@
     "cssnano": "3.6.2",
     "mkdirp": "0.5.1",
     "postcss": "5.0.21",
-    "postcss-css-variables": "0.5.1",
+    "postcss-custom-properties": "5.0.1",
     "postcss-import": "8.1.2"
   }
 }
