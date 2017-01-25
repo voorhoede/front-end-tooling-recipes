@@ -33,7 +33,7 @@ You can configure the processors mentioned above or add your own processors in [
 
 ### Compile CSS
 
-To compile your CSS run:
+To compile your CSS for production (incl. minification), run:
 
 ```bash
 npm run build:css
@@ -44,17 +44,9 @@ Or simply `npm run build` as this will also run `build:css`.
 The compiled CSS plus its sourcemap is written to the `dist/` directory.
 
 
-#### Production
+### Development
 
-To compile your CSS for production:
-
-```bash
-npm run build:prod
-```
-
-#### Development
-
-To compile your CSS whenever you make a change to a CSS file:
+To compile your CSS (excl. minification) whenever you make a change to a CSS file:
 
 ```bash
 npm run watch:css
