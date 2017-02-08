@@ -1,13 +1,12 @@
 {
   "name": "postcss-process-and-watch",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Compile CSS with support for CSS imports, variables, vendor prefixing and minification using PostCSS.",
   "scripts": {
     "build": "npm run build:css",
-    "build:css": "node scripts/postcss.js",
-    "build:prod": "cross-env NODE_ENV=production npm run build",
+    "build:css": "cross-env NODE_ENV=production node scripts/postcss.js",
     "watch": "npm run watch:css",
-    "watch:css": "chokidar 'src/**/*.css' --command 'npm run build:css'"
+    "watch:css": "chokidar 'src/**/*.css' --command 'node scripts/postcss.js'"
   },
   "devDependencies": {
     "autoprefixer": "6.3.6",
