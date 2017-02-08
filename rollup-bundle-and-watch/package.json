@@ -1,0 +1,21 @@
+{
+  "name": "rollup-bundle-and-watch",
+  "version": "1.0.0",
+  "description": "Bundle JS files with support for ES2015/16, minification and sourcemaps using Rollup.",
+  "scripts": {
+    "build": "npm run build:js",
+    "build:js": "rollup --config rollup.config.js --environment NODE_ENV:production",
+    "watch": "npm run watch:js",
+    "watch:js": "rollup --config rollup.config.js --watch"
+  },
+  "devDependencies": {
+    "rollup": "0.41.4",
+    "rollup-plugin-buble": "0.15.0",
+    "rollup-plugin-commonjs": "7.0.0",
+    "rollup-plugin-eslint": "3.0.0",
+    "rollup-plugin-node-resolve": "2.0.0",
+    "rollup-plugin-uglify": "1.0.1",
+    "rollup-watch": "3.2.2"
+  },
+  "dependencies": {}
+}
