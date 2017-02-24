@@ -1,0 +1,3 @@
+*.br
+*.gz
+node_modules/

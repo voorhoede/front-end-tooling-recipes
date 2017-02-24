@@ -1,0 +1,14 @@
+{
+  "name": "compress-with-brotli-and-gzip",
+  "version": "1.0.0",
+  "description": "...",
+  "scripts": {
+    "compress": "node scripts/compress.js"
+  },
+  "devDependencies": {
+    "event-stream": "3.3.4",
+    "gulp": "3.9.1",
+    "gulp-brotli": "1.2.0",
+    "gulp-gzip": "1.4.0"
+  }
+}
