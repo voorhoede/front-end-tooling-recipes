@@ -63,3 +63,15 @@ The summary contains succinct description of the change. Keep it clear, but shor
 The body should include the motivation for the change and contrast this with previous behavior.
 
 Note: the commit message format guidelines are based on [Angular's Git Commit Guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines).
+
+
+## Scripts
+
+Development requires [Node.js](http://nodejs.org/) and [npm](https://npmjs.org/).
+
+After installing dependencies using `npm install` the following scripts are available:
+
+`npm run ...` | Description
+---|---
+`build` | Converts all READMEs to HTML pages and outputs to `dist/`.
+`start` | Starts a dev server on `http://localhost:8665` ("tool" in T9).
