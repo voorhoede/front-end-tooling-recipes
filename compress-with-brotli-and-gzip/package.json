@@ -1,7 +1,7 @@
 {
   "name": "compress-with-brotli-and-gzip",
   "version": "1.0.0",
-  "description": "...",
+  "description": "Compress static files with Brotli and Gzip using maximum compression.",
   "scripts": {
     "compress": "node scripts/compress.js"
   },
