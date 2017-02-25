@@ -1,6 +1,6 @@
 {
   "name": "rollup-bundle-and-watch",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Bundle JS files with support for ES2015/16, minification and sourcemaps using Rollup.",
   "scripts": {
     "build": "npm run build:js",
