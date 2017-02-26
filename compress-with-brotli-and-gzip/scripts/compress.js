@@ -4,6 +4,8 @@ const gulp = require('gulp');
 const gzip = require('gulp-gzip');
 const brotli = require('gulp-brotli');
 const merge = require('event-stream').merge;
+const path = require('path');
+const ora = require('ora');
 
 // configure input, output and processors:
 
@@ -37,10 +39,13 @@ const gzipCompress = () => fileStream()
     .pipe(gzip(gzipSettings))
     .pipe(gulp.dest(outputDir));
 
-const compress = () => merge([
-		gzipCompress(),
-		brotliCompress()
-	])
-    .on('end', () => console.log(`Compressed files saved to ${outputDir}`));
+const compress = () => {
+    const spinner = ora('Compressing files').start();
+    merge([
+        gzipCompress(),
+        brotliCompress()
+    ])
+    .on('end', () => spinner.succeed(`Compressed files saved to \`${path.relative(process.cwd(), outputDir)}/\`.`));
+};
 
 compress();

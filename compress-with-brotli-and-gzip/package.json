@@ -9,6 +9,7 @@
     "event-stream": "3.3.4",
     "gulp": "3.9.1",
     "gulp-brotli": "1.2.0",
-    "gulp-gzip": "1.4.0"
+    "gulp-gzip": "1.4.0",
+    "ora": "1.1.0"
   }
 }
