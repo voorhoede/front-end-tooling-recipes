@@ -5,25 +5,30 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "rimraf dist/ && mkdirp dist/",
-    "build": "node scripts/build-index.js",
+    "build": "node scripts/build-pages.js",
+    "start": "http-server './dist/' -c-1 -o -p 8665",
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/voorhoede/front-end-tooling-recipes.git"
   },
-  "author": "Sanne Veroude <sanne@voorhoede.nl>",
+  "author": "De Voorhoede",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/voorhoede/front-end-tooling-recipes/issues"
   },
-  "homepage": "https://github.com/voorhoede/front-end-tooling-recipes#readme",
+  "homepage": "https://voorhoede.github.io/front-end-tooling-recipes/",
   "devDependencies": {
+    "bluebird": "3.4.7",
     "cheerio": "0.22.0",
+    "fs-promise": "2.0.0",
+    "glob": "7.1.1",
+    "http-server": "0.9.0",
     "is-relative-url": "2.0.0",
     "mkdirp": "0.5.1",
     "ncp": "2.0.0",
     "rimraf": "2.5.4",
-    "voorhoede-ocelot-formatter": "0.3.2"
+    "voorhoede-ocelot-formatter": "0.4.2"
   }
 }
