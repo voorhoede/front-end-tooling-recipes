@@ -10,7 +10,7 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "rules": {
-        "no-console": isProduction ? ["error"] : ["off"],
+        "no-console": isProduction ? ["error", { allow: ["info", "warn", "error"] }] : ["off"],
         "no-debugger": isProduction ? ["error"] : ["off"]
     }
 };
