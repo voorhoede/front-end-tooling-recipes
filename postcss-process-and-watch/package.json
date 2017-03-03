@@ -1,6 +1,6 @@
 {
   "name": "postcss-process-and-watch",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Compile CSS with support for CSS imports, variables, vendor prefixing and minification using PostCSS.",
   "scripts": {
     "build": "npm run build:css",
@@ -14,7 +14,11 @@
     "cross-env": "1.0.7",
     "cssnano": "3.6.2",
     "mkdirp": "0.5.1",
+    "pixrem": "3.0.2",
     "postcss": "5.0.21",
+    "postcss-calc": "5.3.1",
+    "postcss-color-function": "3.0.0",
+    "postcss-color-rgba-fallback": "2.2.0",
     "postcss-custom-properties": "5.0.1",
     "postcss-import": "8.1.2"
   }

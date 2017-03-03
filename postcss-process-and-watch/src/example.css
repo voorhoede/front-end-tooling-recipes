@@ -1,16 +1,21 @@
 /**
  * Example of a partial stylesheet to demonstrate
- * CSS @import and CSS variables (and auto prefixing)
- * Borrowed from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations#Making_text_slide_across_the_browser_window
+ * CSS @import, custom properties and color functions
+ * (with generated fallbacks and auto prefixing)
+ * Borrowed in part from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations#Making_text_slide_across_the_browser_window
  */
 
 :root {
+    --columns: 3;
     --duration: 3s;
 }
 
 .example {
     animation-duration: var(--duration, 1s);
     animation-name: slidein;
+    background: color(red a(90%));
+    width: calc(100% / var(--columns));
+    font-size: 2rem;
 }
 
 @keyframes slidein {
