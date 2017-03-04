@@ -30,5 +30,12 @@ After installing dependencies using `npm install` the following scripts are avai
 ### Production server
 
 * has caching enabled.
+* has dynamic Brotli and Gzip compression enabled.
 * has no auto-reload.
 
+
+## More resources
+
+* [Express - Production best practices](https://expressjs.com/en/advanced/best-practice-performance.html)
+* [Next generation server compression with Brotli](https://www.smashingmagazine.com/2016/10/next-generation-server-compression-with-brotli/)
+* [Shrink-ray, Node.js compression middleware](https://github.com/aickin/shrink-ray)
