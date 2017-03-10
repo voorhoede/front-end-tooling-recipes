@@ -45,11 +45,16 @@
 following processors:</p>
 <ul>
 <li><a href="https://github.com/postcss/postcss-import">CSS <code>@import</code>s</a> to write modular CSS.</li>
-<li><a href="https://github.com/postcss/postcss-custom-properties">CSS variables</a> for parametrised CSS.</li>
+<li><a href="https://github.com/postcss/postcss-custom-properties">Custom properties</a> (CSS variables) for parametrised CSS.</li>
+<li><a href="https://github.com/postcss/postcss-color-function">Color functions</a> to adjust colors using modifier functions.</li>
+<li><a href="https://github.com/postcss/postcss-color-rgba-fallback">RGBA color fallback</a> adds a hex fallback value to every rgba value. </li>
+<li><a href="https://github.com/robwierzbowski/node-pixrem">Pixrem</a> adds pixel fallback before every rem value.</li>
+<li><a href="https://github.com/postcss/postcss-calc">Pre calculation</a> for better <code>calc</code> support. </li>
 <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> to auto vendor prefix your CSS.</li>
 <li><a href="http://cssnano.co/">cssnano</a> to minify your CSS for production.</li>
 </ul>
 <p><a href="https://github.com/voorhoede/front-end-tooling-recipes/blob/master/postcss-process-and-watch/src/index.css"><code>src/index.css</code></a> is the main entry point for the CSS compile script. So be sure to start there.</p>
+<p>Note: the aim of this recipe is to write spec compliant CSS. All processors are selected to enable this and improve browser support. Processors adding non-standard features are avoided.</p>
 <h3 id="add-configure-processors">Add &amp; configure processors</h3>
 <p>You can configure the processors mentioned above or add your own processors in <a href="https://github.com/voorhoede/front-end-tooling-recipes/blob/master/postcss-process-and-watch/scripts/postcss.js"><code>scripts/postcss.js</code></a>.</p>
 <h3 id="compile-css">Compile CSS</h3>
