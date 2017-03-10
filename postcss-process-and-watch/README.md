@@ -19,11 +19,17 @@ You can write modern CSS with support for [CSS imports](https://developer.mozill
 following processors:
 
 * [CSS `@import`s](https://github.com/postcss/postcss-import) to write modular CSS.
-* [CSS variables](https://github.com/postcss/postcss-custom-properties) for parametrised CSS.
+* [Custom properties](https://github.com/postcss/postcss-custom-properties) (CSS variables) for parametrised CSS.
+* [Color functions](https://github.com/postcss/postcss-color-function) to adjust colors using modifier functions.
+* [RGBA color fallback](https://github.com/postcss/postcss-color-rgba-fallback) adds a hex fallback value to every rgba value. 
+* [Pixrem](https://github.com/robwierzbowski/node-pixrem) adds pixel fallback before every rem value.
+* [Pre calculation](https://github.com/postcss/postcss-calc) for better `calc` support. 
 * [Autoprefixer](https://github.com/postcss/autoprefixer) to auto vendor prefix your CSS.
 * [cssnano](http://cssnano.co/) to minify your CSS for production.
 
 [`src/index.css`](src/index.css) is the main entry point for the CSS compile script. So be sure to start there.
+
+Note: the aim of this recipe is to write spec compliant CSS. All processors are selected to enable this and improve browser support. Processors adding non-standard features are avoided.
 
 
 ### Add & configure processors
