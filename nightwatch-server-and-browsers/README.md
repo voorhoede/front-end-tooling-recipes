@@ -49,3 +49,8 @@ npm run test
 ```
 
 These scripts are pre-configured in [`package.json`](package.json). The browsers to test in are passed as script arguments.
+
+
+## More resources
+
+* [Run Nightwatch tests on your Continuous Integration server](https://github.com/dwyl/learn-nightwatch#running-your-nightwatch-tests-on-your-continuous-integration-ci) (part of [Learn Nightwatch](https://github.com/dwyl/learn-nightwatch))
