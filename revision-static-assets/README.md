@@ -25,6 +25,8 @@ This recipe revisions files in a given working directory. You can adjust this `w
 
 Revision is done in 2 steps. During the first step (`revisionHash()`) all matching files are renamed with a hash based on their content added to their filename. A file's hash only changes when its contents changes. After all matching files are revisioned, the original files are removed. During the second step (`revisionReplace()`) references to the revisioned files in other files are updated to match the new hashed filenames. You can adjust the file patterns in these steps to match your setup.
 
+In both steps glob patterns are used (`gulp.src([ filePatterns ]).pipe(filter( ... ))`) to match the desired files to revision or update references in. You can adjust these patterns to your liking.
+
 The revision script ([`scripts/revision.js`](scripts/revision.js)) is annotated line-by-line explaining these steps in more detail.
 
 
@@ -32,7 +34,7 @@ The revision script ([`scripts/revision.js`](scripts/revision.js)) is annotated 
 
 To demonstrate the revisioning script, this recipe has an example project in the [`src/` directory](src/) with an HTML file including a stylesheet, an image, a script file and registering a Service Worker. The stylesheet in turn uses custom font files. The Service Worker pre-caches all assets and serves them from cache.
 
-A `build` script is pre-configured to copy this project to `dist/`. The `revision` script runs `postbuild` and revisions all static assets in the `dist/` directory.
+A `build` script is pre-configured to copy this project to `dist/`. The `revision` script runs `postbuild` and revisions all matching static assets in the `dist/` directory.
 
 You can find the `build`, `postbuild` and `revision` scripts in [`package.json`](package.json). To run the build and revision all files in the `workingDir`:
 
