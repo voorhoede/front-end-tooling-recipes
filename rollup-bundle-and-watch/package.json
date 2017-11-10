@@ -9,7 +9,7 @@
     "watch:js": "rollup --config rollup.config.js --watch"
   },
   "devDependencies": {
-    "rollup": "0.41.4",
+    "rollup": "0.51.3",
     "rollup-plugin-buble": "0.15.0",
     "rollup-plugin-commonjs": "7.0.0",
     "rollup-plugin-eslint": "3.0.0",

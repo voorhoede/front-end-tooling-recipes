@@ -18,9 +18,11 @@ if (isProduction) {
 }
 
 module.exports = {
-    entry: 'src/index.js',
-    dest: 'dist/index.js',
-    sourceMap: 'dist/index.js.map',
-    format: 'iife',
+    input: 'src/index.js',
+    output: {
+        file: 'dist/index.js',
+        format: 'iife'
+    },
+    sourcemap: 'dist/index.js.map',
     plugins,
 };
