@@ -32,7 +32,7 @@ git rm -rf .
 ```bash
 echo "Placeholder page" > index.html
 git add index.html
-git commit -a -m "Placeholder page"
+git commit -m "Placeholder page"
 git push origin gh-pages
 ```
 
